@@ -1,0 +1,19 @@
+.cart{
+    background-color: #FFE0B3;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+}
+.cart h5{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+}
+.cart p{
+    font-size: 17px;
+}
+.cart h6{
+    font-size: 21px;
+}
