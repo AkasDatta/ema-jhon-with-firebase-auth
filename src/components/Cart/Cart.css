@@ -17,3 +17,25 @@
 .cart h6{
     font-size: 21px;
 }
+.btn-clear-cart{
+    width: 90%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    background-color: #FF3030;
+    border-radius: 4px;
+    font-size: 17px;
+    font-family: 'Lato';
+    align-items: center;
+}
+.btn-review-cart{
+    width: 90%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    background-color: #FF9900;
+    border-radius: 4px;
+    font-size: 17px;
+    font-family: 'Lato';
+    align-items: center;
+}
