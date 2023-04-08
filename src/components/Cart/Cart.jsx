@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './Cart.css';
 
-const Cart = ({cart}) => { //added props to {cart} 
+const Cart = ({cart, handleClearCart}) => { //added props to {cart} 
     // const cart = props.cart //option 1
     // const {cart} = props; //option 2 
     // console.log(cart);
@@ -24,7 +24,7 @@ const Cart = ({cart}) => { //added props to {cart}
         totalShipping = totalShipping + product.shipping;
         quantity = quantity + product.quantity;
     }
-    const tax = totalPrice*7/100;
+    const tax = totalPrice * 7 / 100;
 
     const grandTotal = totalPrice + totalShipping + tax;
 
@@ -36,8 +36,10 @@ const Cart = ({cart}) => { //added props to {cart}
             <p>Total Shipping Charge: ${totalShipping} </p>
             <p>Tax: ${tax.toFixed(2)}</p>
             <h6>Grand Total: ${grandTotal.toFixed(2)}</h6>
-            <button className='btn-clear-cart'><span>Clear cart</span> <FontAwesomeIcon className='clear-icon' icon={faTrashAlt} /></button>
-            <button className='btn-review-cart'><span>Review Order</span> <FontAwesomeIcon className='review-icon' icon={faArrowRight} /></button>
+
+            <button onClick={handleClearCart} className='btn-clear-cart'><span>Clear cart</span> <FontAwesomeIcon icon={faTrashAlt} /></button>
+
+            <button className='btn-review-cart'><span>Review Order</span> <FontAwesomeIcon icon={faArrowRight} /></button>
         </div>
     );
 };

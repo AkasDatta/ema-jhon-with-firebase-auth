@@ -17,6 +17,11 @@ const Orders = () => {
         removeFromDb(id);
     }
 
+    const handleClearCart = () =>{
+        setCart([]);
+        console.log(handleClearCart);
+    }
+
     return (
         <div className='shop-container'>
             <div className='review-container'>
@@ -29,7 +34,10 @@ const Orders = () => {
                 } 
             </div>
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <Cart 
+                    cart={cart}
+                    handleClearCart={handleClearCart}
+                ></Cart>
             </div>
         </div>
     );
