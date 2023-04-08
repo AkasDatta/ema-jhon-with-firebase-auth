@@ -97,8 +97,8 @@ const Shop = () => {
                     cart={cart}
                     handleClearCart={handleClearCart}
                 >
-                    <Link to="/order">
-                        <button className='btn-review-cart'><span>Review Order</span> <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <Link className='proceed-link' to="/order">
+                        <button className='btn-proceed'><span>Review Order</span> <FontAwesomeIcon icon={faArrowRight} /></button>
                     </Link>
                 </Cart>
             </div>
