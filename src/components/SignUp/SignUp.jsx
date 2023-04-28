@@ -17,7 +17,7 @@ const SignUp = () => {
         console.log(email, password, confirm);
 
         setError('')
-        
+
         if(password !== confirm){
             setError('Your password did not match')
             return
@@ -28,14 +28,14 @@ const SignUp = () => {
         }
 
         createUser(email, password)
-        .then(result => {
-            const loggedUser = result.user;
-            console.log(loggedUser);
-        })
-        .catch(error => {
-            console.log(error);
-            setError(error.message)
-        })
+            .then(result => {
+                const loggedUser = result.user;
+                console.log(loggedUser);
+            })
+            .catch(error => {
+                console.log(error);
+                setError(error.message)
+            })
     }
 
     return (

@@ -17,3 +17,12 @@ nav.header a{
 nav.header a:hover{
     color: gray;
 }
+.text-white{
+    color: white;
+    margin-left: 15px;
+}
+.btn-out{
+    margin-left: 5px;
+    background: white;
+    color: black;
+}
